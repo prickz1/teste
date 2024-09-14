@@ -16,7 +16,17 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
 
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+.logos img{
+    margin-left: 0;
 }
 
 header img {
@@ -175,6 +185,10 @@ main {
 @media (max-width: 1200px) {
     header {
         align-items: center;
+    }
+
+    header img {
+        margin: 0rem;
     }
 
     .introducao{

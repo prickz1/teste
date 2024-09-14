@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 body {
     margin: 0;
@@ -17,7 +16,17 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
 
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos img {
+    margin-left: 0;
 }
 
 header img {
@@ -78,14 +87,18 @@ main {
 
 .container {
     display: flex;
+    flex-direction: row; /* Default behavior for larger screens */
+    flex-wrap: wrap; /* Allow the elements to wrap if needed */
+    gap: 2rem; /* Ensure space between the cards */
+}
 
+.card2, .card3 {
+    width: 48%; /* Allow them to take up less space to avoid overlap */
 }
 
 .card2 {
-    width: 50%;
     display: flex;
     flex-direction: column;
-
 }
 
 .card2 h3 {
@@ -101,7 +114,6 @@ main {
     font-size: 16px;
     margin: 0.5rem;
     line-height: 1.3rem;
-
 }
 
 .destaca {
@@ -114,7 +126,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+}
+
+.botaoCima{
+    padding-bottom: 3rem;
 }
 
 .card3 p {
@@ -127,8 +142,6 @@ main {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 1rem;
-
-
 }
 
 .botao {
@@ -171,8 +184,12 @@ main {
     header {
         align-items: center;
     }
+    
+    header img {
+        margin: 0rem;
+    }
 
-    main{
+    main {
         padding: 0.5rem 2rem;
     }
 
@@ -182,25 +199,22 @@ main {
         flex-direction: column;
     }
 
-    .card1 p{
+    .card1 p {
         margin: 0.5rem;
     }
 
     .card1 h2:first-of-type {
         font-size: 35px;
     }
-    
-    
 }
 
-
 @media (max-width: 1000px) {
-    main{
+    main {
         flex-direction: column;
         align-items: center;
     }
 
-    .container{
+    .container {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -209,13 +223,18 @@ main {
 }
 
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack them vertically */
+        align-items: center;
+    }
+
+    .card2, .card3 {
+        width: 100%; /* Full width for smaller screens */
+    }
+
     .card1 h2:first-of-type {
         display: flex;
         justify-content: center;
-    }
-
-    .card2{
-        width: 95%;
     }
 
     .card2 h3 {
@@ -223,7 +242,7 @@ main {
         font-size: 25px;
     }
 
-    .card3{
-        width: 95%;
+    .card3 {
+        width: 100%;
     }
 }
