@@ -87,13 +87,13 @@ main {
 
 .container {
     display: flex;
-    flex-direction: row; /* Default behavior for larger screens */
-    flex-wrap: wrap; /* Allow the elements to wrap if needed */
-    gap: 2rem; /* Ensure space between the cards */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .card2, .card3 {
-    width: 48%; /* Allow them to take up less space to avoid overlap */
+    width: 48%;
 }
 
 .card2 {
@@ -224,12 +224,12 @@ main {
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack them vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .card2, .card3 {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%;
     }
 
     .card1 h2:first-of-type {
