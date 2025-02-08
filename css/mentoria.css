@@ -1,0 +1,195 @@
+.main {
+    padding: 32px 12.5%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+.main__titulo{
+    background: linear-gradient(45deg, rgb(116, 8, 8), rgb(143, 7, 7), rgb(201, 4, 4), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: animateGradient 5s ease infinite;
+    font-weight: 800;
+    font-size: 45px;
+    padding-bottom: 48px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.main__texto{
+    color: #ccc;
+    font-size: 20px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.main__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26.67px;
+    list-style-type: none;
+    padding-top: 5rem;
+    
+}
+
+.main__list_item-titulo{
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.8);
+}
+
+.main__list_item{
+    box-shadow: 0px 4px 24px 0px #7B7B7B26;
+    background-color: #0D0D0D;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+
+.main__list_item_descricao{
+    color: white; 
+    text-align: start;
+    padding: 1.5rem;
+}
+
+.main__list_item_descricao-preco{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #FFFFFF;
+    
+}
+
+.main__list_item-botao a{
+    text-decoration: none;
+    background-color: rgb(143, 7, 7);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.main__list_item-botao a:hover{
+    background-color: rgb(97, 9, 9);
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 32px 5%;
+    }
+
+    .main__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .main__list_item {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__container_intro {
+    grid-area: intro;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main__container_plano {
+    grid-area: plano;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.main__container_plano-titulo {
+    color: gold;
+}
+
+.main__container_plano-preco {
+    color: gold;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main__container_item-botao {
+    text-decoration: none;
+    background-color: rgb(143, 7, 7);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.main__container_item-botao:hover {
+    background-color: rgb(97, 9, 9);
+    transition: 0.4s;
+}
+
+.main__container_beneficios-texto{
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.5rem;
+    text-align: start;
+}

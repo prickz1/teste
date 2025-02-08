@@ -1,0 +1,80 @@
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url('../img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 5rem;
+    gap: 60px;
+    align-items: center;
+}
+
+.banner__container-titulo {
+    background: linear-gradient(45deg, rgb(116, 8, 8), rgb(143, 7, 7), rgb(201, 4, 4), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: animateGradient 5s ease infinite;
+    font-weight: 800;
+    font-size: 45px;
+    padding-bottom: 48px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner__container-titulo span{
+    color: white;
+    -webkit-text-fill-color: white;
+    font-size: 35px;
+}
+
+
+.banner__container-botao{
+    text-decoration: none;
+    background-color: rgb(143, 7, 7);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.75rem;
+    width: 12rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner__container-botao:hover {
+    background-color: rgb(97, 9, 9);
+    transition: 0.4s;
+}
+
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.banner__video {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9; 
+    border-radius: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+    .banner__video {
+        display: none;
+    }
+
+    .banner__container{
+        text-align: center;
+        
+    }
+}

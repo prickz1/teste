@@ -5,54 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viver do Trading</title>
-    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/VIVER.png" alt="Logo" width="100" height="100">
-        <div class="logos">
-            <a href="https://trade.bull-ex.com/register?aff=423905&aff_model=revenue&afftrack=" target="_blank"><img
-                    src="img/logo2.png" alt="Insta" width="65" height="65"></a>
-            <a href="https://www.instagram.com/eoteuzas/?hl=pt-br" target="_blank"><img src="img/insta.png" alt="Insta"
-                    width="65" height="65"></a>
-        </div>
+    <header class="cabecalho">
+        <nav class="cabecalho_nav">
+            <ul class="cabecalho_nav_list">
+                <li>
+                    <h1 class="cabecalho_logo">
+                        <img src="img/VIVER.png" alt="Logo">
+                    </h1>
+                </li>
+                <li class="cabecalho_nav_list_item">
+                    <a href="https://trade.bull-ex.com/register?aff=423905&aff_model=revenue&afftrack="
+                        class="cabecalho_nav_list_link cabecalho_nav_list_link-bullex" target="_blank"><img
+                            src="img/logo2.png" alt="bullex">
+                    </a>
+
+                </li>
+                <li class="cabecalho_nav_list_item">
+                    <a href="https://www.instagram.com/eoteuzas/?hl=pt-br"
+                        class="cabecalho_nav_list_link cabecalho_nav_list_link-insta" target="_blank"><img
+                            src="img/insta.png" alt="Insta">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="introducao">
-            <div class="chamada">
-                <div>
-                    <h2>VIVER DO TRADING:</h2>
-                    <h2>Explore o mundo do Day Trading</h2>
-                </div>
-                <p>Aprenda estratégias eficazes, gerenciamento de riscos e fortaleça sua mentalidade para o sucesso
-                    consistente na bolsa de valores. Este curso abrangente oferece insights práticos e ferramentas
-                    essenciais em um programa de 30 dias. Projetado para capacitar traders de todos os níveis de
-                    experiência. Seja você um novato ou um profissional experiente, este curso irá aprimorar suas
-                    habilidades e aumentar sua confiança para enfrentar os desafios do mercado financeiro.</p>
+    <section class="banner">
+        <div class="banner__container">
+            <h2 class="banner__container-titulo">VIVER DO TRADING: <span>Explore o mundo do Day Trading</span></h2>
+            <a class="banner__container-botao" href="mentoria.html"><b>Quero
+                    mudar de VIDA</b></a>
+        </div>
+        <iframe class="banner__video"
+            src="https://www.youtube.com/embed/6ph6r8MQtMk?autoplay=1&loop=1&playlist=6ph6r8MQtMk&rel=0&modestbranding=1&showinfo=0&mute=1"
+            frameborder="0" allowfullscreen>
+        </iframe>
 
-                <div class="chamadaLink">
-                    <p class="destaca">Toque no botão abaixo e comece sua jornada no trade:</p>
+    </section>
 
-                    <a class="botao" href="mentoria.html"><b>Quero
-                            mudar de VIDA</b></a>
-                </div>
-            </div>
-            <div class="video-site">
-                <iframe width="100%" height="auto"
-                    src="https://www.youtube.com/embed/6ph6r8MQtMk?autoplay=1&loop=1&playlist=6ph6r8MQtMk&rel=0&modestbranding=1&showinfo=0&mute=1"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section class="descricao">
-            <div class="video-container">
-                <video width="680" height="600" autoplay muted loop>
-                    <source src="video/video1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="descricao-container">
-                <h3>Um pouco da minha história</h3>
+    <main class="main">
+
+        <video class="main__video" autoplay muted loop>
+            <source src="video/video1.mp4" type="video/mp4">
+        </video>
+        <div class="main__container">
+            <h3 class="main__container_titulo">Um pouco da minha história</h3>
                 <p>Olá, sou o Mateus, um profissional apaixonado pelo mundo do Day Trading. Com mais de 3 anos de
                     experiência em Opções Binárias, desenvolvi diversas abordagens únicas e eficazes para alcançar o
                     sucesso.
@@ -68,11 +77,10 @@
                     comprometido em compartilhar meu conhecimento e experiência para ajudar outros a trilharem seu
                     próprio caminho rumo ao sucesso em O.B.
                 </p>
-            </div>
-        </section>
+        </div>
+
 
     </main>
-
 </body>
 
 </html>
