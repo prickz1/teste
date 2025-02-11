@@ -10,8 +10,7 @@ A página possui as seguintes funcionalidades principais:
 - **Seção "Sobre"**: Uma área principal que fornece informações sobre o Mateus e seus cursos.
 - **Vídeos**: Dois vídeos incorporados, um utilizando a tag `iframe` e outro vídeo embutido diretamente na página, para facilitar o acesso ao conteúdo multimídia.
 - **Responsividade**: Layout adaptável para diferentes dispositivos, garantindo uma boa experiência tanto em desktops quanto em dispositivos móveis.
-- **Formulário de Contato**: Permite que os alunos entrem em contato diretamente através da página.
-- **Links para Redes Sociais**: Ícones que direcionam para as redes sociais do Mateus, facilitando a conexão e o engajamento com os alunos.
+- **Link para Redes Sociais**: Ícones que direcionam para as redes sociais do Mateus, facilitando a conexão e o engajamento com os alunos.
 
 Essas funcionalidades foram implementadas para garantir uma navegação intuitiva e uma apresentação clara e atraente dos cursos oferecidos.
 A página mostrará um menu de navegação no cabeçalho, um banner e uma main que conta um pouco sobre o Mateus. Também tem dois videos, um usando o iframe e o outro video normal.
